@@ -1,4 +1,4 @@
-
+# Thanks
 
 import os, requests, uuid, json, infos, ssl
 import pandas as pd
@@ -17,14 +17,11 @@ path = '/translate?api-version=3.0'
 params = '&to=fr'
 constructed_url = endpoint + path + params
 
-# create a function
-def translate(en):
-    body = [{'text': en}]
-    request = requests.post(constructed_url, headers=headers, json=body)
-    response = request.json()
-    return (response[0]['translations'][0]['text'])
+# create body
+body = [{
+    'text' : 'Hello World!'
+}]
+request = requests.post(constructed_url, headers=headers, json=body)
+response = request.json()
 
-# example of the call
-df = pd.DataFrame({'English': ['Hello', 'today', 'goodbye']})
-df['French'] = df['English'].apply(translate)
-df
+print(json.dumps(response, sort_keys=True, indent=4, separators=(',', ': ')))
