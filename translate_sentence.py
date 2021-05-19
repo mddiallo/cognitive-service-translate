@@ -1,4 +1,4 @@
-# Thanks
+# Example for one sentence
 
 import os, requests, uuid, json, infos, ssl
 import pandas as pd
@@ -14,12 +14,12 @@ headers = {
 }
 
 path = '/translate?api-version=3.0'
-params = '&to=fr'
+params = '&to=fr&to=sl'
 constructed_url = endpoint + path + params
 
 # create body
 body = [{
-    'text' : 'Hello World!'
+    'text' : 'Hello Sam, how are you in this sunny friday?'
 }]
 request = requests.post(constructed_url, headers=headers, json=body)
 response = request.json()
