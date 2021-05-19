@@ -1,7 +1,7 @@
 import requests, infos
 
 endpoint = "https://mdtranslator25.cognitiveservices.azure.com/translator/text/batch/v1.0-preview.1"
-subscriptionKey =  infos.subscriptionKey
+subscriptionKey =  infos.subscriptionKey # Add your subscription key here!
 path = '/batches'
 constructed_url = endpoint + path
 
