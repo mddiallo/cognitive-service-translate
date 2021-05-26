@@ -1,4 +1,4 @@
-# Example for one sentence
+# Example for translating one sentence
 
 import os, requests, uuid, json, infos, ssl
 import pandas as pd
