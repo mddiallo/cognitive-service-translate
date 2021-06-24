@@ -10,4 +10,5 @@ Demo with Azure cognitive service for translation
    
    The API type must be "Translator" (see the image below)
    
+   <img src="https://github.com/mddiallo/cognitive-service-translate/blob/master/img/cog_type.png" alt="API type"/>
  
