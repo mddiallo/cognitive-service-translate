@@ -1,4 +1,4 @@
-# cognitive-service-translate
+# Cognitive Service Translate
 Demo with Azure cognitive service for translation
   
   # Document translation
