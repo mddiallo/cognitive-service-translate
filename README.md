@@ -1,5 +1,5 @@
 # Cognitive Service Translate
-Demo with Azure cognitive service for translation
+Few Demos about Azure cognitive service for translation
   
   # Document translation
   
